@@ -4,152 +4,280 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Database/Computer/Motherboard/Intel/intelsyles.css"
+    />
     <title>PCDatabase - Intel Motherboards</title>
   </head>
   <body>
+    <script src="/Database/Computer/Motherboard/Intel/intelscript.js"></script>
     <h1>Intel Motherboards</h1>
     <a href="/index.html">Home</a>
     <a href="/database.html">Database</a>
     <a href="/support.html">Support</a>
     <p>Choose product:</p>
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/D865GLC/D865GLC.html"
-      >D865GLC
-    </a>
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/D5400XS/D5400XS.html"
-      >D5400XS</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DX48BT2/DX48BT2.html"
-      >DX48BT2</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DX38BT/DX38BT.html"
-      >DX38BT</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ45EK/DQ45EK.html"
-      >DQ45EK</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ45CB/DQ45CB.html"
-      >DQ45CB</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ43AP/DQ43AP.html"
-      >DQ43AP</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ35MP/DQ35MP.html"
-      >DQ35MP</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ35JO/DQ35JO.html"
-      >DQ35JO</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DP45SG/DP45SG.html"
-      >DP45SG</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DP43TF/DP43TF.html"
-      >DP43TF</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DP43BFL/DP43BFL.html"
-      >DP43BFL</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DP43BF/DP43BF.html"
-      >DP43BF</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DP35DP/DP35DP.html"
-      >DP35DP</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG45FC/DG45FC.html"
-      >DG45FC</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG45ID/DG45ID.html"
-      >DG45ID</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG43GT/DG43GT.html"
-      >DG43GT</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG43NB/DG43NB.html"
-      >DG43NB</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41MJ/DG41MJ.html"
-      >DG41MJ</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41AN/DG41AN.html"
-      >DG41AN</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41TY/DG41TY.html"
-      >DG41TY</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41RQ/DG41RQ.html"
-      >DG41RQ</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41TX/DG41TX.html"
-      >DG41TX</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41CN/DG41CN.html"
-      >DG41CN</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41WV/DG41WV.html"
-      >DG41WV</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG35EC/DG35EC.html"
-      >DG35EC</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG33TL/DG33TL.html"
-      >DG33TL</a
-    >
-    <br />
-    <a
-      href="/Database/Computer/Motherboard/Intel/Desktop Board/DG33FB/DG33FB.html"
-      >DG33FB</a
-    >
+    <input
+      type="text"
+      id="intelmsearch"
+      onkeyup="intelmsearch()"
+      placeholder="Search..."
+    />
+    <ul id="intelmul">
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/D865GLC/D865GLC.html"
+          >D865GLC
+        </a>
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/D5400XS/D5400XS.html"
+          >D5400XS</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DX48BT2/DX48BT2.html"
+          >DX48BT2</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DX38BT/DX38BT.html"
+          >DX38BT</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ45EK/DQ45EK.html"
+          >DQ45EK</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ45CB/DQ45CB.html"
+          >DQ45CB</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ43AP/DQ43AP.html"
+          >DQ43AP</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ35MP/DQ35MP.html"
+          >DQ35MP</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DQ35JO/DQ35JO.html"
+          >DQ35JO</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DP45SG/DP45SG.html"
+          >DP45SG</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DP43TF/DP43TF.html"
+          >DP43TF</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DP43BFL/DP43BFL.html"
+          >DP43BFL</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DP43BF/DP43BF.html"
+          >DP43BF</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DP35DP/DP35DP.html"
+          >DP35DP</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG45FC/DG45FC.html"
+          >DG45FC</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG45ID/DG45ID.html"
+          >DG45ID</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG43GT/DG43GT.html"
+          >DG43GT</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG43NB/DG43NB.html"
+          >DG43NB</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41MJ/DG41MJ.html"
+          >DG41MJ</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41AN/DG41AN.html"
+          >DG41AN</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41TY/DG41TY.html"
+          >DG41TY</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41RQ/DG41RQ.html"
+          >DG41RQ</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41TX/DG41TX.html"
+          >DG41TX</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41CN/DG41CN.html"
+          >DG41CN</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG41WV/DG41WV.html"
+          >DG41WV</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG35EC/DG35EC.html"
+          >DG35EC</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG33TL/DG33TL.html"
+          >DG33TL</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/DG33FB/DG33FB.html"
+          >DG33FB</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Server Board/DBM10JNP2SB/DBM10JNP2SB.html"
+          >DBM10JNP2SB</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/D845HV/D845HV.html"
+          >D845HV</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/D845HVL/D845HVL.html"
+          >D845HVL</a
+        >
+        <br />
+      </li>
+
+      <li>
+        <a
+          href="/Database/Computer/Motherboard/Intel/Desktop Board/D845WN/D845WN.html"
+          >D845WN</a
+        >
+      </li>
+    </ul>
   </body>
 </html>
