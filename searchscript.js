@@ -1,8 +1,8 @@
-function intelmsearch() {
+function search() {
   var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById("intelmsearch");
+  input = document.getElementById("search");
   filter = input.value.toUpperCase();
-  ul = document.getElementById("intelmul");
+  ul = document.getElementById("searchul");
   li = ul.getElementsByTagName("li");
 
   for (i = 0; i < li.length; i++) {

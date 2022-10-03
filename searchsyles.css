@@ -1,4 +1,4 @@
-#intelmsearch {
+#search {
   background-image: url("/css/searchicon.png");
   background-position: 10px 12px;
   background-repeat: no-repeat;
@@ -9,13 +9,13 @@
   margin-bottom: 12px;
 }
 
-#intelmul {
+#searchul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-#intelmul li a {
+#searchul li a {
   border: 1px solid #ddd;
   margin-top: -1px;
   background-color: #f6f6f6;
@@ -26,6 +26,6 @@
   display: block;
 }
 
-#intelmul li a:hover:not(.header) {
+#searchul li a:hover:not(.header) {
   background-color: #eee;
 }
