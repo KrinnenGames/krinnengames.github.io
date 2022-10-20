@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PCDatabase - Motherboard</title>
     <link rel="stylesheet" href="/Styles/tablestyles.css" />
+    <link rel="stylesheet" href="/Styles/styles.css" />
   </head>
   <body>
     <script src="/Scripts/tablesearchscript.js"></script>
@@ -17,14 +18,12 @@
     <a href="/support.html">Support</a>
     <br />
     <div id="input">
-      <tr>
-        <input
-          type="text"
-          id="nameinput"
-          onkeyup="namesearch()"
-          placeholder="Search Name..."
-        />
-      </tr>
+      <th style="width: 60%">
+        <input type="text" id="nameinput" onkeyup="namesearch()" placeholder="Search Name..." />
+      </th>
+      <th style="width: 40%">
+        <input type="text" id="brandinput" onkeyup="brandsearch()" placeholder="Search Brand..." />
+      </th>
     </div>
     <table id="searchtable">
       <tr class="header">
@@ -137,9 +136,7 @@
       </tr>
       <tr>
         <td>
-          <a href="Intel/Server Board/DBM10JNP2SB/DBM10JNP2SB.html"
-            >DBM10JNP2SB</a
-          >
+          <a href="Intel/Server Board/DBM10JNP2SB/DBM10JNP2SB.html">DBM10JNP2SB</a>
         </td>
         <td>Intel</td>
       </tr>
@@ -193,9 +190,7 @@
       </tr>
       <tr>
         <td>
-          <a href="Intel/Desktop Board/D845GERG2L/D845GERG2L.html"
-            >D845GERG2L</a
-          >
+          <a href="Intel/Desktop Board/D845GERG2L/D845GERG2L.html">D845GERG2L</a>
         </td>
         <td>Intel</td>
       </tr>
@@ -216,6 +211,18 @@
           <a href="Intel/Desktop Board/D845PEBT2/D845PEBT2.html">D845PEBT2</a>
         </td>
         <td>Intel</td>
+      </tr>
+      <tr>
+        <td><a href="Albatron/PX865PE-Pro/PX865PE-Pro.html">PX865PE-Pro</a></td>
+        <td>Albatron</td>
+      </tr>
+      <tr>
+        <td><a href="Albatron/PX845EV1/PX845EV1.html">PX845EV1</a></td>
+        <td>Albatron</td>
+      </tr>
+      <tr>
+        <td><a href="Albatron/PX845E/PX845E.html">PX845E</a></td>
+        <td>Albatron</td>
       </tr>
     </table>
   </body>

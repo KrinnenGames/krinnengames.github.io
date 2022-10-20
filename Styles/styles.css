@@ -1,0 +1,22 @@
+* {
+  font-family: HindSiliguri;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+img {
+  width: 250px;
+}
+
+@font-face {
+  font-family: HindSiliguri;
+  src: url(/Fonts/Hind_Siliguri/HindSiliguri-Medium.ttf);
+}
