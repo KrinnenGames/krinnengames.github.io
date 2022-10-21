@@ -1,0 +1,17 @@
+.popular-items {
+  display: flex;
+}
+
+.popular-items a {
+  text-align: center;
+  margin: 5px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.coming-soon {
+  text-align: center;
+  background-image: linear-gradient(blue, lightblue);
+  margin: 0;
+}
