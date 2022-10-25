@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/Styles/styles.css" />
   </head>
   <body>
-    <script src="/Scripts/tablesearchscript.js"></script>
     <h1>Motherboard</h1>
     <a href="/Database/database.html" id="backbutton">Back</a>
     <br />
@@ -18,12 +17,10 @@
     <a href="/support.html">Support</a>
     <br />
     <div id="input">
-      <th style="width: 60%">
-        <input type="text" id="nameinput" onkeyup="namesearch()" placeholder="Search Name..." />
-      </th>
-      <th style="width: 40%">
-        <input type="text" id="brandinput" onkeyup="brandsearch()" placeholder="Search Brand..." />
-      </th>
+      <input type="text" id="nameinput" onkeyup="namesearch()" placeholder="Search Name..." />
+      <input onclick="brandsearch_all()" type="checkbox" id="cb_all" checked />All
+      <input onclick="brandsearch_intel()" type="checkbox" id="cb_intel" />Intel
+      <input onclick="brandsearch_albatron()" type="checkbox" id="cb_albatron" />Albatron
     </div>
     <table id="searchtable">
       <tr class="header">
@@ -305,5 +302,6 @@
         <td>Albatron</td>
       </tr>
     </table>
+    <script src="/Scripts/tablesearchscript.js"></script>
   </body>
 </html>
