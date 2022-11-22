@@ -11,6 +11,29 @@
 
       gtag("config", "G-FQXR9VVE95");
     </script>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDbeN32FjWn-xWdeXJ0u7X71Tl3H10dzs8",
+      authDomain: "pcdatabase-e6579.firebaseapp.com",
+      projectId: "pcdatabase-e6579",
+      storageBucket: "pcdatabase-e6579.appspot.com",
+      messagingSenderId: "620944682723",
+      appId: "1:620944682723:web:02c162cb25fbd2a81b9fd6",
+      measurementId: "G-2XMK96M93X"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
