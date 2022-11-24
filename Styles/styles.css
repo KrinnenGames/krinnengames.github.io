@@ -2,18 +2,22 @@
   font-family: HindSiliguri;
 }
 
+img {
+  width: 250px;
+}
+
 a {
+  border: solid 1px black;
+  border-radius: 50px;
+  padding: 3px 13px 3px 13px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
   text-decoration: none;
-  color: blue;
 }
 
 a:visited {
-  text-decoration: none;
-  color: blue;
-}
-
-img {
-  width: 250px;
+  color: white;
 }
 
 @font-face {

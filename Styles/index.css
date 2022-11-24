@@ -5,13 +5,12 @@
 .popular-items a {
   text-align: center;
   margin: 5px;
-  border: 2px solid #ddd;
+  border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
+  background-color: white;
 }
 
-.coming-soon {
-  text-align: center;
-  background-image: linear-gradient(blue, lightblue);
-  margin: 0;
+strong {
+  color: black;
 }
