@@ -20,6 +20,16 @@ a:visited {
   color: white;
 }
 
+.info-link {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  text-decoration: underline;
+  color: blue !important;
+}
+
 @font-face {
   font-family: HindSiliguri;
   src: url(/Fonts/Hind_Siliguri/HindSiliguri-Medium.ttf);
