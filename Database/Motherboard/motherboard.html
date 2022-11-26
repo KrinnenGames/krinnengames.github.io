@@ -27,7 +27,7 @@
     <br />
     <br />
     <a href="/index.html">Home</a>
-    <a href="/Database/database.html">Database</a>>
+    <a href="/Database/database.html">Database</a>
     <a href="/Info/info.html">Info</a>
     <a href="/support.html">Support</a>
     <br />
@@ -38,18 +38,11 @@
         onkeyup="namesearch()"
         placeholder="Search Name..."
       />
-      <input
-        onclick="brandsearch_all()"
-        type="checkbox"
-        id="cb_all"
-        checked
-      />All
-      <input onclick="brandsearch_intel()" type="checkbox" id="cb_intel" />Intel
-      <input
-        onclick="brandsearch_albatron()"
-        type="checkbox"
-        id="cb_albatron"
-      />Albatron
+      <select onchange="brand_select()" id="brand_select">
+        <option value="All">All</option>
+        <option value="Intel">Intel</option>
+        <option value="Albatron">Albatron</option>
+      </select>
     </div>
     <table id="searchtable">
       <tr class="header">
