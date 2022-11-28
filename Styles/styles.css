@@ -20,6 +20,12 @@ a:visited {
   color: white;
 }
 
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+  .generation {
+    display: none;
+  }
+}
+
 .info-link {
   border: none;
   border-radius: 0;

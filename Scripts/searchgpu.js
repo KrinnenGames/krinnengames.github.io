@@ -1,16 +1,37 @@
 var input = document.getElementById("nameinput");
 var table = document.getElementById("searchtable");
 var tr = table.getElementsByTagName("tr");
+var option_brand = document.getElementById("brand_select");
+var option_chipset = document.getElementById("chipset_select");
+var filter = input.value.toUpperCase();
+var txtValue_0, txtValue_1, txtValue_2, td_0, td_1, td_2, i;
 
 function namesearch() {
-  var td, i, txtValue;
-  var filter = input.value.toUpperCase();
+  filter = input.value.toUpperCase();
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
+    td_0 = tr[i].getElementsByTagName("td")[0];
+    td_1 = tr[i].getElementsByTagName("td")[1];
+    td_2 = tr[i].getElementsByTagName("td")[2];
+    if (td_0 && td_1 && td_2) {
+      txtValue_0 = td_0.textContent || td_0.innerText;
+      txtValue_1 = td_1.textContent || td_1.innerText;
+      txtValue_2 = td_2.textContent || td_2.innerText;
+      if (txtValue_0.toUpperCase().indexOf(filter) > -1) {
+        if (option_brand.value == "All" && option_chipset.value == "All") {
+          tr[i].style.display = "";
+        } else if (option_brand.value == "Palit" && txtValue_1 == "Palit") {
+          tr[i].style.display = "";
+        } else if (
+          option_chipset.value == "GF30" &&
+          txtValue_2 == "GeForce RTX 30 Series"
+        ) {
+          tr[i].style.display = "";
+        } else if (
+          option_chipset.value == "GF40" &&
+          txtValue_2 == "GeForce RTX 40 Series"
+        ) {
+          tr[i].style.display = "";
+        }
       } else {
         tr[i].style.display = "none";
       }
@@ -18,104 +39,106 @@ function namesearch() {
   }
 }
 
-var cb_all = document.getElementById("cb_all");
-var cb_palit = document.getElementById("cb_palit");
-var cb_gf30 = document.getElementById("cb_gf30");
-var cb_gf40 = document.getElementById("cb_gf40");
-
-function brandsearch_all() {
-  var td, i;
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
+function brand_select() {
+  if (option_brand.value == "All") {
+    for (i = 0; i < tr.length; i++) {
       tr[i].style.display = "";
     }
+    namesearch();
   }
-  if (!cb_all.checked) {
-    cb_all.checked = true;
-  }
-  if (cb_palit.checked) {
-    cb_palit.checked = false;
-  }
-  if (cb_gf40.checked) {
-    cb_gf40.checked = false;
-  }
-  if (cb_gf30.checked) {
-    cb_gf30.checked = false;
-  }
-}
-
-function brandsearch_palit() {
-  var td, i, txtValue;
-  if (cb_palit.checked) {
+  filter = input.value.toUpperCase();
+  if (option_brand.value == "Palit") {
     for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[1];
-      if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue == "Palit") {
-          tr[i].style.display = "";
-        }
-        else {
-          tr[i].style.display = "none";
-        }
-        if (cb_all.checked) {
-          cb_all.checked = false;
+      td_0 = tr[i].getElementsByTagName("td")[0];
+      td_1 = tr[i].getElementsByTagName("td")[1];
+      td_2 = tr[i].getElementsByTagName("td")[2];
+      if (td_0 && td_1 && td_2) {
+        txtValue_0 = td_0.textContent || td_0.innerText;
+        txtValue_1 = td_1.textContent || td_1.innerText;
+        txtValue_2 = td_2.textContent || td_2.innerText;
+        if (
+          txtValue_1 == "Palit" &&
+          txtValue_0.toUpperCase().indexOf(filter) > -1
+        ) {
+          if (
+            option_chipset.value == "GF30" &&
+            txtValue_2 == "GeForce RTX 30 Series"
+          ) {
+            tr[i].style.display = "";
+          } else if (
+            option_chipset.value == "GF40" &&
+            txtValue_2 == "GeForce RTX 40 Series"
+          ) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
         }
       }
     }
   }
 }
 
-function brandsearch_gf30() {
-    var td, i, txtValue;
-    if (cb_gf30.checked) {
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[2];
-        if (td) {
-          txtValue = td.textContent || td.innerText;
-          if (txtValue == "GeForce RTX 30 Series") {
+function chipset_select() {
+  if (option_chipset.value == "All") {
+    for (i = 0; i < tr.length; i++) {
+      tr[i].style.display = "";
+    }
+    namesearch();
+  }
+  filter = input.value.toUpperCase();
+  if (option_chipset.value == "GF30") {
+    for (i = 0; i < tr.length; i++) {
+      td_0 = tr[i].getElementsByTagName("td")[0];
+      td_1 = tr[i].getElementsByTagName("td")[1];
+      td_2 = tr[i].getElementsByTagName("td")[2];
+      if (td_0 && td_1 && td_2) {
+        txtValue_0 = td_0.textContent || td_0.innerText;
+        txtValue_1 = td_1.textContent || td_1.innerText;
+        txtValue_2 = td_2.textContent || td_2.innerText;
+        if (
+          txtValue_2 == "GeForce RTX 30 Series" &&
+          txtValue_0.toUpperCase().indexOf(filter) > -1
+        ) {
+          if (option_brand.value == "Palit" && txtValue_1 == "Palit") {
             tr[i].style.display = "";
-          } else if (cb_gf40.checked) {
-            if (txtValue == "GeForce RTX 40 Series") {
-              tr[i].style.display = "";
-            } else {
-              tr[i].style.display = "none";
-            }
+          } else if (
+            option_chipset.value == "GF40" &&
+            txtValue_2 == "GeForce RTX 40 Series"
+          ) {
+            tr[i].style.display = "";
           } else {
             tr[i].style.display = "none";
-          }
-          if (cb_all.checked) {
-            cb_all.checked = false;
           }
         }
       }
     }
   }
-  
-  function brandsearch_gf40() {
-    var td, i, txtValue;
-    if (cb_gf40.checked) {
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[2];
-        if (td) {
-          txtValue = td.textContent || td.innerText;
-          if (txtValue == "GeForce RTX 40 Series") {
+  if (option_chipset.value == "GF40") {
+    for (i = 0; i < tr.length; i++) {
+      td_0 = tr[i].getElementsByTagName("td")[0];
+      td_1 = tr[i].getElementsByTagName("td")[1];
+      td_2 = tr[i].getElementsByTagName("td")[2];
+      if (td_0 && td_1 && td_2) {
+        txtValue_0 = td_0.textContent || td_0.innerText;
+        txtValue_1 = td_1.textContent || td_1.innerText;
+        txtValue_2 = td_2.textContent || td_2.innerText;
+        if (
+          txtValue_2 == "GeForce RTX 40 Series" &&
+          txtValue_0.toUpperCase().indexOf(filter) > -1
+        ) {
+          if (option_brand.value == "Palit" && txtValue_1 == "Palit") {
             tr[i].style.display = "";
-          } else if (cb_gf30.checked) {
-            if (txtValue == "GeForce RTX 30 Series") {
-              tr[i].style.display = "";
-            } else {
-              tr[i].style.display = "none";
-            }
+          } else if (
+            option_chipset.value == "GF30" &&
+            txtValue_2 == "GeForce RTX 30 Series"
+          ) {
+            tr[i].style.display = "";
           } else {
             tr[i].style.display = "none";
-          }
-          if (cb_all.checked) {
-            cb_all.checked = false;
           }
         }
       }
     }
   }
-  
+}

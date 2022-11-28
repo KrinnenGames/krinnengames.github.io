@@ -23,6 +23,8 @@ function namesearch() {
           txtValue_1 == "Albatron"
         ) {
           tr[i].style.display = "";
+        } else if (option_brand.value == "ASRock" && txtValue_1 == "ASRock") {
+          tr[i].style.display = "";
         }
       } else {
         tr[i].style.display = "none";
@@ -66,6 +68,24 @@ function brand_select() {
         txtValue_1 = td_1.textContent || td_1.innerText;
         if (
           txtValue_1 == "Albatron" &&
+          txtValue_0.toUpperCase().indexOf(filter) > -1
+        ) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+  if (option_brand.value == "ASRock") {
+    for (i = 0; i < tr.length; i++) {
+      td_0 = tr[i].getElementsByTagName("td")[0];
+      td_1 = tr[i].getElementsByTagName("td")[1];
+      if (td_0 && td_1) {
+        txtValue_0 = td_0.textContent || td_0.innerText;
+        txtValue_1 = td_1.textContent || td_1.innerText;
+        if (
+          txtValue_1 == "ASRock" &&
           txtValue_0.toUpperCase().indexOf(filter) > -1
         ) {
           tr[i].style.display = "";

@@ -38,24 +38,15 @@
         id="nameinput"
         placeholder="Search Name..."
       />
-      <input
-        onclick="brandsearch_all()"
-        type="checkbox"
-        id="cb_all"
-        checked
-      />All
-      <input onclick="brandsearch_palit()" type="checkbox" id="cb_palit" />Palit
-      <input
-        style="margin-left: 20px"
-        onclick="brandsearch_all()"
-        type="checkbox"
-        id="cb_all"
-        checked
-      />All
-      <input onclick="brandsearch_gf40()" type="checkbox" id="cb_gf40" />GeForce
-      RTX 40 Series
-      <input onclick="brandsearch_gf30()" type="checkbox" id="cb_gf30" />GeForce
-      RTX 30 Series
+      <select id="brand_select" onchange="brand_select()">
+        <option value="All">All</option>
+        <option value="Palit">Palit</option>
+      </select>
+      <select id="chipset_select" onchange="chipset_select()">
+        <option value="All">All</option>
+        <option value="GF40">GeForce RTX 40 Series</option>
+        <option value="GF30">GeForce RTX 30 Series</option>
+      </select>
     </div>
     <table id="searchtable">
       <tr class="header">
