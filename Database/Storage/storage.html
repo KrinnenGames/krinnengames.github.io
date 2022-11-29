@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCDatabase - Storage</title>
+    <link rel="stylesheet" href="/Styles/tablestyles.css" />
+    <link rel="stylesheet" href="/Styles/styles.css" />
+  </head>
+  <body>
+    <h1>Storage</h1>
+    <a href="/Database/database.html" id="backbutton">Back</a>
+    <br />
+    <br />
+    <a href="/index.html">Home</a>
+    <a href="/Database/database.html">Database</a>
+    <a href="/Info/info.html">Info</a>
+    <a href="/support.html">Support</a>
+    <br />
+    <div id="input">
+      <input type="text" id="nameinput" onkeyup="namesearch()" placeholder="Search Name..." />
+      <select onchange="brand_select()" id="brand_select">
+        <option value="All">All</option>
+        <option value="Biostar">Biostar</option>
+        <option value="ASUS">ASUS</option>
+      </select>
+    </div>
+    <table id="searchtable">
+      <tr class="header">
+        <th style="width: 60%">Name</th>
+        <th style="width: 40%">Brand</th>
+      </tr>
+      <tr>
+        <td><a href="Biostar/G300/G300.html">G300</a></td>
+        <td>Biostar</td>
+      </tr>
+      <tr>
+        <td><a href="ASUS/17G013A34107/17G013A34107.html">17G013A34107</a></td>
+        <td>ASUS</td>
+      </tr>
+      <tr>
+        <td><a href="ASUS/17G013A3790P/17G013A3790P.html">17G013A3790P</a></td>
+        <td>ASUS</td>
+      </tr>
+      <tr>
+        <td><a href="ASUS/Republic Of Gamers Raidr/Republic Of Gamers Raidr.html">Republic Of Gamers Raidr</a></td>
+        <td>ASUS</td>
+      </tr>
+      <tr>
+        <td><a href="ASUS/SATA 3/SATA 3.html">SATA 3</a></td>
+        <td>ASUS</td>
+      </tr>
+    </table>
+    <script src="/Scripts/searchstorage.js"></script>
+  </body>
+</html>
