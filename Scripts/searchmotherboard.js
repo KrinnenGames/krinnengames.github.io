@@ -18,10 +18,7 @@ function namesearch() {
           tr[i].style.display = "";
         } else if (option_brand.value == "Intel" && txtValue_1 == "Intel") {
           tr[i].style.display = "";
-        } else if (
-          option_brand.value == "Albatron" &&
-          txtValue_1 == "Albatron"
-        ) {
+        } else if (option_brand.value == "Albatron" && txtValue_1 == "Albatron") {
           tr[i].style.display = "";
         } else if (option_brand.value == "ASRock" && txtValue_1 == "ASRock") {
           tr[i].style.display = "";
@@ -48,10 +45,7 @@ function brand_select() {
       if (td_0 && td_1) {
         txtValue_0 = td_0.textContent || td_0.innerText;
         txtValue_1 = td_1.textContent || td_1.innerText;
-        if (
-          txtValue_1 == "Intel" &&
-          txtValue_0.toUpperCase().indexOf(filter) > -1
-        ) {
+        if (txtValue_1 == "Intel" && txtValue_0.toUpperCase().indexOf(filter) > -1) {
           tr[i].style.display = "";
         } else {
           tr[i].style.display = "none";
@@ -66,10 +60,7 @@ function brand_select() {
       if (td_0 && td_1) {
         txtValue_0 = td_0.textContent || td_0.innerText;
         txtValue_1 = td_1.textContent || td_1.innerText;
-        if (
-          txtValue_1 == "Albatron" &&
-          txtValue_0.toUpperCase().indexOf(filter) > -1
-        ) {
+        if (txtValue_1 == "Albatron" && txtValue_0.toUpperCase().indexOf(filter) > -1) {
           tr[i].style.display = "";
         } else {
           tr[i].style.display = "none";
@@ -84,10 +75,7 @@ function brand_select() {
       if (td_0 && td_1) {
         txtValue_0 = td_0.textContent || td_0.innerText;
         txtValue_1 = td_1.textContent || td_1.innerText;
-        if (
-          txtValue_1 == "ASRock" &&
-          txtValue_0.toUpperCase().indexOf(filter) > -1
-        ) {
+        if (txtValue_1 == "ASRock" && txtValue_0.toUpperCase().indexOf(filter) > -1) {
           tr[i].style.display = "";
         } else {
           tr[i].style.display = "none";
