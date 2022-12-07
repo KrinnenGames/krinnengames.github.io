@@ -1,28 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FQXR9VVE95"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-FQXR9VVE95");
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PCDatabase - Steam Deck</title>
-    <link rel="stylesheet" href="/Styles/tablestyles.css" />
+    <title>PCDatabase - Valve Steam Deck</title>
     <link rel="stylesheet" href="/Styles/styles.css" />
+    <link rel="stylesheet" href="/Styles/grid.css" />
   </head>
   <body>
-    <h1>Steam Deck</h1>
+    <h1>Valve Steam Deck</h1>
     <a href="/Database/Others/others.html" id="backbutton">Back</a>
     <br />
     <br />
@@ -30,17 +17,21 @@
     <a href="/Database/database.html">Database</a>
     <a href="/Info/info.html">Info</a>
     <a href="/support.html">Support</a>
-    <p>Choose version:</p>
-    <table id="searchtable">
-      <tr>
-        <td><a href="Steam Deck 512.html">512GB NVMe</a></td>
-      </tr>
-      <tr>
-        <td><a href="Steam Deck 256.html">256GB NVMe</a></td>
-      </tr>
-      <tr>
-        <td><a href="Steam Deck 64.html">64GB eMMC</a></td>
-      </tr>
-    </table>
+    <div class="grid-container">
+      <a class="grid-item" href="Steam Deck 512.html">
+        <img src="Steam Deck (1).png" alt="">
+        <br> Steam Deck 512GB NVMe
+      </a>
+      <a class="grid-item" href="Steam Deck 256.html">
+        <img src="Steam Deck (1).png" alt="">
+        <br>
+        Steam Deck 256GB NVMe
+      </a>
+      <a class="grid-item" href="Steam Deck 64.html">
+        <img src="Steam Deck (1).png" alt="">
+        <br>
+        Steam Deck 64GB eMMC
+      </a>
+    </div>
   </body>
 </html>

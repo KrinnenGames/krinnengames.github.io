@@ -32,23 +32,8 @@
     <a href="/support.html">Support</a>
     <br />
     <div id="input">
-      <input
-        type="text"
-        id="nameinput"
-        onkeyup="namesearch()"
-        placeholder="Search Name..."
-      />
-      <input
-        onclick="brandsearch_all()"
-        type="checkbox"
-        id="cb_all"
-        checked
-      />All
-      <input
-        onclick="brandsearch_deepcool()"
-        type="checkbox"
-        id="cb_deepcool"
-      />Deepcool
+      <input type="text" id="nameinput" onkeyup="namesearch()" placeholder="Search Name..."/>
+      <select id="brand_select"></select>
     </div>
     <table id="searchtable">
       <tr class="header">
@@ -58,6 +43,10 @@
       <tr>
         <td><a href="Deepcool/CC560 ARGB/CC560 ARGB.html">CC560 ARGB</a></td>
         <td>Deepcool</td>
+      </tr>
+      <tr>
+        <td><a href="Techsolo/TC-020/TC-020.html">TC-020</a></td>
+        <td>Techsolo</td>
       </tr>
     </table>
     <script src="/Scripts/searchcase.js"></script>

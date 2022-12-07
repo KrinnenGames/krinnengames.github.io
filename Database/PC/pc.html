@@ -17,29 +17,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PCDatabase - GeForce RTX 4090 GameRock OC</title>
+    <title>PCDatabase - CPU</title>
+    <link rel="stylesheet" href="/Styles/tablestyles.css" />
     <link rel="stylesheet" href="/Styles/styles.css" />
   </head>
   <body>
-    <h1>GeForce RTX 4090 GameRock OC</h1>
-    <a href="/Database/GPU/gpu.html" id="backbutton">Back</a>
+    <h1>CPU</h1>
+    <a href="/Database/database.html" id="backbutton">Back</a>
     <br />
     <br />
     <a href="/index.html">Home</a>
     <a href="/Database/database.html">Database</a>
     <a href="/Info/info.html">Info</a>
     <a href="/support.html">Support</a>
-    <h3>Pictures</h3>
-    <img src="GeForce RTX 4090 GameRock OC (1).png" alt="" />
-    <h3>Specifications</h3>
-    <p>Chip: GeForce RTX 4090</p>
-    <p>Memory Size: 24GB</p>
-    <p>Memory Type: GDDR6X</p>
-    <p>Memory Interface: 384bit</p>
-    <p>Graphics Clock: 2235 MHz</p>
-    <p>Boost Clock: 2610 MHz</p>
-    <p>Memory Clock: 21Gbps</p>
-    <p>CUDA Cores: 16384</p>
-    <p>Video Out: HDMI 2.1, 3x DisplayPort 1.4</p>
+    <br />
+    <div class="input">
+      <input
+        type="text"
+        onkeyup="namesearch()"
+        id="nameinput"
+        placeholder="Search Name..."
+      />
+      <select onchange="family_select()" id="family_select">
+        <option value="All">All</option>
+        <option value="Dell">Dell</option>
+      </select>
+    </div>
+    <table id="searchtable">
+      <tr class="header">
+        <th style="width: 60%">Name</th>
+        <th style="width: 40%">Brand</th>
+      </tr>
+    </table>
+    <script src="/Scripts/searchpc.js"></script>
   </body>
 </html>

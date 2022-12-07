@@ -32,18 +32,11 @@
     <a href="/Info/info.html">Info</a>
     <a href="/support.html">Support</a>
     <div class="input">
-      <input
-        type="text"
-        onkeyup="namesearch()"
-        id="nameinput"
-        placeholder="Search Name..."
-      />
-      <input
-        type="text"
-        onkeyup="brandsearch()"
-        id="brandinput"
-        placeholder="Search Brand..."
-      />
+      <input type="text" onkeyup="namesearch()" id="nameinput" placeholder="Search Name..." />
+      <select onchange="brand_select()" id="brand-search">
+        <option value="All">All</option>
+        <option value="Valve">Valve</option>
+      </select>
     </div>
     <table id="searchtable">
       <tr class="header">
@@ -55,5 +48,6 @@
         <td>Valve</td>
       </tr>
     </table>
+    <script src="/Scripts/searchothers.js"></script>
   </body>
 </html>
