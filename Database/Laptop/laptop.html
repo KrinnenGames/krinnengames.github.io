@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCDatabase - Laptop</title>
+    <link rel="stylesheet" href="/Styles/tablestyles.css" />
+    <link rel="stylesheet" href="/Styles/styles.css" />
+  </head>
+  <body>
+    <h1>Laptop</h1>
+    <a href="/Database/database.html" id="backbutton">Back</a>
+    <br />
+    <br />
+    <a href="/index.html">Home</a>
+    <a href="/Database/database.html">Database</a>
+    <a href="/Info/info.html">Info</a>
+    <a href="/support.html">Support</a>
+    <br />
+    <div id="input">
+      <input type="text" id="nameinput" onkeyup="namesearch()" placeholder="Search Name..." />
+      <select onchange="brand_select()" id="brand_select">
+        <option value="All">All</option>
+        <option value="Intel">Terra</option>
+      </select>
+    </div>
+    <table id="searchtable">
+      <tr class="header">
+        <th style="width: 60%">Name</th>
+        <th style="width: 40%">Brand</th>
+      </tr>
+      <tr>
+        <td><a href="Terra/Gamer Elite 5/Gamer Elite 5.html">Gamer Elite 5</a></td>
+        <td>Terra</td>
+      </tr>
+    </table>
+    <script src="/Scripts/searchlaptop.js"></script>
+  </body>
+</html>
