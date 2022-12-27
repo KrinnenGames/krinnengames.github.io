@@ -1,24 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FQXR9VVE95"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-FQXR9VVE95");
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PCDatabase - Home</title>
-    <link rel="stylesheet" href="/Styles/index.css" />
+    <link rel="stylesheet" href="/Styles/grid.css" />
     <link rel="stylesheet" href="/Styles/styles.css" />
   </head>
   <body>
@@ -27,15 +14,15 @@
     <a href="/Database/database.html">Database</a>
     <a href="/Info/info.html">Info</a>
     <a href="/support.html">Support</a>
-    <h3>Popular Items:</h3>
-    <div class="popular-items">
-      <a
-        class="popular-item"
-        href="/Database/Others/Steam Deck/Steam Deck.html"
-      >
+    <h3>Quick Menu</h3>
+    <div class="grid-container">
+      <a class="grid-item" href="/Database/Others/Steam Deck/Steam Deck.html">
         <img src="/Database/Others/Steam Deck/Steam Deck (1).png" alt="" />
-        <br />
-        <strong>Steam Deck</strong><br />
+        <strong><p class="index-text">Steam Deck</p></strong>
+      </a>
+      <a class="grid-item" href="/Database/database.html">
+        <img src="Database/Database.png" style="border-radius: 10px" alt="">
+        <strong><p class="index-text">Database</p></strong>
       </a>
     </div>
   </body>

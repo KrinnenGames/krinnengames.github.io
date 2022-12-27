@@ -27,3 +27,7 @@
     grid-template-columns: auto auto;
   }
 }
+
+.index-text {
+  color: black;
+}
